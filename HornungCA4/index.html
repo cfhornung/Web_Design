@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Assignment 4</title>
+  <meta charset="utf-8">
+  <meta name="viewport" 
+content="width=device-width, initial-scale=1.0">
+
+  <!-- Add link to slicknav's css here. You can use the following CDN link. -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/slicknav.min.css">
+  
+  <!-- Add link to your custom stylesheet here. This link must come *after* the link to the slicknav stylesheet above. -->
+  <link rel="stylesheet" href="styles/styles.css">
+  
+  <!-- A Google font -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet"> 
+
+  <!-- Font awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+
+  <!-- You must now add general jQuery functionality with this link to the jQuery CDN. You don't need to add another document to your project for this one, since it's an absolute link leadinng to a library hosted elsewhere online. -->
+ <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  
+ <!-- Add link to the slicknav-specific script file here. Use the following CDN link. NOTE: this link must *always* come *after* the jQuery CDN link above. -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/jquery.slicknav.min.js"></script>
+
+  <!-- Now add the following script to create a slicknav (mobile) version of your navigation menu, then attach it to an empty nav element you'll add before your navigation menu in your HTML. In this case, I've given my navigation menu the .nav_menu class; insert the class attached to your own navigation menu where you see .nav_menu in the following script. In the HTML, you'll see I've added an empty nav element just before .nav_menu and given it the ID #mobilemenu. That ID appears in the script below, too. Insert the class or ID name you've attached to your empty nav element where you see #mobilemenu in the following script. -->
+
+  <script>
+    $(function() {
+      $('#nav_menu').slicknav();
+    });
+  </script>
+</head>
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="background">
+          <nav class="home">
+            <ul>
+            <li><i class="fab fa-centos"></i></li>
+            <li><a href="#">Natural</a></li>
+          </nav>
+            <nav id="mobilemenu"></nav>
+            <nav id="nav_menu">
+                <ul class="nav">
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">Products</a>
+                    <ul>
+                      <li><a href="#">Organic</a></li>
+                      <li><a href="#">Raw</a></li>
+                      <li><a href="#">Pure</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#" class="lastitem">Contact</a></li>
+                </ul>
+              </nav>
+        </header>
+
+        <section class="one">
+          <div class="one1">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. A iaculis at erat pellentesque adipiscing commodo elit at. Blandit libero volutpat sed cras. Senectus et netus et malesuada</p>
+          </div>
+        </section>
+        <section class="two">
+          <div>
+            <p>"The Best Investment You'll Ever Make Is Your Own Health"</p>
+          </div>
+        </section>
+        <section class="three">
+          <h1>Velit Aliquet Sagittis</h1>
+          <p>Facilisis volutpat est velit egestas dui id. Risus pretium quam vulputate dignissim suspendisse. Magnis dis parturient montes nascetur ridiculus mus mauris vitae ultricies.</p>
+        </section>
+        <footer>
+          <form action="">
+            <div class="container">
+                <h3>sign up for our mailing list!</h3>
+            </div>
+            <div class="container">
+                <label>full name</label>
+                <input type="text" name="name" required>
+                <label>email</label>
+                <input type="email" name="mail" required>
+                <button type="submit" value="submit">submit!</button>
+            </div>
+            </form>
+        </footer>
+        </footer>
+    </div>
+</body>

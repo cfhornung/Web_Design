@@ -1,0 +1,269 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Playfair Display', serif;
+    background-color: #FFFAFA; color: #131516; 
+}
+  
+  .wrapper {
+    display: grid;
+    height: 100vh;
+    margin: 0 auto;
+    grid-template-rows: 1fr 2fr 1fr;
+    grid-template-columns: 1fr;
+  }
+  
+  header {
+    grid-column: 1/4;
+    grid-row: 1/2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .web-link {
+    text-decoration: none;
+  }
+
+  #right-marg {
+    padding-right: 5%;
+  }
+  
+  .peace-website:hover,
+  .peace-website:focus {
+    color: rgb(217, 178, 49);
+  }
+  
+  .peace-website {
+    color: white;
+    padding: 2%;
+    font-family: 'Playfair Display', serif;
+    text-decoration: none;
+    margin: 15px;
+    font-size: 1.5em;
+    font-weight: 200;
+    letter-spacing: 1px;
+  }
+  
+  .navbar {
+    display: flex;
+    background: rgb(8, 75, 90);
+
+  }
+
+  .nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+    font-family: 'Playfair Display', serif;
+    font-size: .75em;
+    letter-spacing: 1px;
+  }
+  
+
+  .nav-item {
+    position: relative;
+    background: rgb(162, 174, 187);
+    border-radius: 6px;
+    margin: 10px;
+    width: 100px;
+    text-align: center;
+    list-style: none;
+  }
+  
+  .nav-item a {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: white;
+  }
+  
+  .nav li ul {
+    display: none;
+    position: absolute;
+    left: 0;
+    list-style: none;
+  }
+  
+  .nav li:hover ul,
+  .nav li:focus ul {
+    display: block;
+    z-index: 10;
+    width: 100%;
+  }
+  
+  .nav li ul li {
+    width: 100%;
+  }
+  
+  .drop-down {
+    background:rgb(217, 178, 49);
+    border-radius: 5px;
+    margin-top: 1px;
+  }
+  
+  .drop-down:hover,
+  .drop-down:focus {
+    background: rgb(162, 174, 187);
+  }
+  
+  .nav li:hover ul li a,
+  .nav li:focus ul li a {
+    color: white;
+  }
+  
+  .nav li:hover ul li:hover a,
+  .nav li:focus ul li:focus a {
+    color: rgb(8, 75, 90);
+  }
+  
+  .nav-item:hover,
+  .nav-item:focus {
+    background-color: white;
+  }
+  
+  .nav-item:hover a,
+  .nav-item:focus a {
+    color: rgb(8, 75, 90);
+  }
+  
+  main {
+    background: rgb(162, 174, 187);
+    grid-column: 1/4;
+    grid-row: 2/3;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .content {
+    padding-top: 10%;
+    background-color: white;
+  }
+  
+  .content .content-item {
+    font-family: 'Playfair Display', serif;
+    display: inline-block;
+    width: 200px;
+    text-align: center;
+    flex-wrap: wrap;
+    letter-spacing: 1px;
+    margin-bottom: 15%;
+  }
+  
+  .content-item i {
+    font-size: 1.25em;
+  }
+  
+  .content-item h2 {
+    font-weight: 750;
+    font-size: 1.25em;
+    text-transform: uppercase;
+  }
+  
+  .content-item p {
+    font-size: .75em;
+    font-weight: 600;
+    margin-bottom: 10%;
+    flex-wrap: wrap;
+  }
+  
+  .content-item a {
+    background-color: white;
+    color: black;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: 'Playfair Display', serif;
+    font-weight: 750;
+    font-size: .75em;
+    letter-spacing: 2px;
+    padding: 10px;
+    border: 2px solid black;
+    flex-wrap: wrap;
+  }
+  
+  .content-item a:hover,
+  .content-item a:focus {
+    background-color: rgb(150, 189, 98);
+    color: white;
+    font-weight: 700;
+  }
+  
+
+  footer {
+    background: rgb(8, 75, 90);
+    grid-column: 1/4;
+    grid-row: 3/4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  h3 {
+    letter-spacing: 1px;
+    font-weight: 700;
+  }
+
+  label {
+    letter-spacing: 1px;
+    font-weight: 600;
+  }
+
+  form {
+    border-radius: 6px;
+  }
+
+  .container {
+    padding: 20px;
+    background-color: rgb(162, 174, 187);
+    font-family: 'Playfair Display', serif;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: .75em;
+    font-display: flex;
+    width: 65%;
+    margin-left: 13%;
+  }
+  
+  input[type="text"],
+  input[type="submit"],
+  input[type="email"] {
+    width: 100%;
+    display: inline-block;
+    border: 1px solid black;
+  }
+  
+  input:focus,
+  textarea:focus {
+    outline: 2px solid rgb(217, 178, 49);
+  }
+  
+  input,
+  textarea {
+    border: 1px solid #000;
+  }
+  
+  button {
+    background: white;
+    border: 0;
+    margin-top: 12px;
+    width: 100%;
+    padding: 0.5em;
+    font-size: 1.1em;
+    font-weight: 700;
+    background: rgb(217, 178, 49);
+    color: white;
+    letter-spacing: 1px;
+  }
+  
+  button:hover,
+  button:focus {
+    background: white;
+    color: rgb(150, 189, 98);
+    border: 1px solid rgb(150, 189, 98);
+  }

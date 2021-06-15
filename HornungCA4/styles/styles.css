@@ -1,0 +1,246 @@
+
+* {
+    font-family: 'Playfair Display', serif;
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    margin: 0 auto;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 25% 25%;
+    grid-template-rows: 2fr 3fr 1fr;
+    grid-template-areas:
+      "header header header"
+      "one two three"
+      "footer footer footer";
+}
+
+header {
+    grid-area: header;
+    min-height: 40vh;
+    /* position: absolute; */
+}
+
+.background {
+    background-image: url("foliage.jpeg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    margin: 0;
+    /* position: relative; */
+}
+
+i {
+    margin-left: 1rem;
+    position: relative;
+}
+
+ul {
+
+    text-align: right;
+    margin-top: 1rem;
+    margin-right: .5rem;
+    position: relative;
+}
+
+.home li {
+    display: inline-block;
+    cursor: pointer;
+    margin: 0 auto;
+    /* background: tomato; */
+    text-align: left;
+    z-index: 1000;
+    position: relative;
+}
+
+.home a {
+    text-decoration: none;
+    color:rgba(255, 255, 255, 0.421)
+}
+.home {
+    color: rgba(255, 255, 255, 0.421);
+    font-size: 2em;
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    /* position: fixed; */
+    overflow: hidden;
+}
+
+
+#nav_menu li {
+    display: inline-block;
+    padding: .5rem;
+    cursor: pointer;
+    position: relative;
+    text-align: center;
+    background: gray;
+    opacity: .5;
+    border-radius: 3px;
+}
+
+#nav_menu li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+#nav_menu li ul {
+    display: none;
+    position: absolute;
+    left: 0;
+    margin-top: .5rem;
+    font-size: .8em;
+    z-index: 1000;
+}
+
+#nav_menu li ul li {
+    width: 100%;
+    padding: .2rem;
+}
+
+#nav_menu li:hover ul {
+    display: block;
+}
+
+#nav_menu li:hover {
+    background: rgb(0, 0, 0);
+    opacity: 1;
+}
+
+section {
+    display: grid;
+    border: black;
+}
+
+.one {
+    grid-area: one;
+    background-color: rgb(10, 15, 15);
+    padding: 10%;
+    align-items: center;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.69);
+}
+
+.two {
+    grid-area: two;
+    background-color:  rgb(10, 10, 10);
+    padding: 10%;
+    align-items: center;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.538);
+    font-size: 1.7em;
+}
+
+.three {
+    grid-area: three;
+    background-color: rgb(10, 15, 5);
+    color: rgba(255, 255, 255, 0.538);
+    padding: 20%;
+}
+
+.three h1 {
+    padding: 10%;
+    margin-bottom: 10%;
+    align-items: center;
+}
+
+footer {
+    grid-area: footer;
+    background-color: black;
+    color: rgba(255, 255, 255, 0.538);
+    padding-top: 1rem;
+}
+
+#nav_menu {
+    position: absolute;
+    top: 0;
+    height: 80%;
+    width: 100%;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.1em;
+    z-index: 1000;
+    /* overflow: hidden; */
+}
+
+.container {
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+.slicknav_menu {
+    display: none;
+}
+
+
+@media only screen and (max-width: 767px)  {
+.wrapper {
+
+    grid-template-rows:min-content;
+    grid-template-areas:
+    "header header header"
+    "one one one"
+    "two two two"
+    "three three three"
+    "footer footer footer";
+}
+
+@media only screen and (max-width: 767px) {
+    #nav_menu {
+        display: none;
+    }
+    
+  .slicknav_menu {
+    display: block;
+  }
+
+  .slicknav_nav .slicknav_row,
+  .slicknav_nav a {
+    display: block;
+    align-content: flex-end;
+    max-width: 100px;
+  }
+
+  .slicknav_nav ul {
+    margin: 0 0 0 20px;
+    text-align: center;
+    justify-content: flex-end;
+  }
+
+  ul {
+      display: block;
+    justify-content: flex-end;
+  }
+
+  #nav_menu li {
+    padding: 2px 3px;
+    background:  rgb(10, 15, 5);
+    margin-right: 0;
+  }
+
+  #nav_menu li:hover a {
+    background: rgba(255, 255, 255, 0.538);
+  }
+
+  #nav_menu a {
+    font-size: 1em;
+    display: block;
+  }
+
+  #nav_menu a:hover {
+    background:  rgb(10, 15, 5) !important;
+  }
+
+  #nav_menu {
+    color: rgba(255, 255, 255, 0.538) !important;
+  }
+}
+}

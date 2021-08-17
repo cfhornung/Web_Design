@@ -1,0 +1,86 @@
+/*about_style.css: Daniela*/
+
+.card-bio-section{
+    width: 100%;
+}
+
+.bio-card{
+    padding: 20px 3%;
+}
+
+.carousel-inner{
+    height: 300px;
+}
+
+.carousel:hover{
+    transform: scale(1.1);
+}
+
+.bio-card-info{
+    padding: 15px;
+    background-color: #E5D8C8;
+}
+
+.bio-card-label{
+    display: inline;
+    font-weight: bold;
+}
+
+p{
+    display: inline-block;
+    font-size: 1rem;
+}
+
+li {
+    font-size: 1rem;
+}
+
+.bio-description{
+    padding: 20px 3% 20px 0;
+}
+
+#bio-title{
+    margin-bottom: 20px;
+}
+
+.about-dropdown-menu{
+    width: 100%;
+}
+
+.card-header{
+    background-color: #BEBAB1;
+}
+
+i{
+    color: black;
+}
+
+.card-header:hover{
+    background-color: #CCE8CF;
+}
+
+.bio-title{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 767px){
+
+    .row{
+        width: 100%;
+        margin-right: 0 !important;
+        margin-left: 0 !important;
+    }
+
+    .bio-description{
+        padding: 0 3%;
+    }
+    
+    .carousel-inner{
+        height: 600px;
+    }
+
+    .carousel:hover{
+        transform: none;
+    }
+}

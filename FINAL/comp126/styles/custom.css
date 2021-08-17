@@ -1,0 +1,144 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background: #e6e1dd;
+}
+
+h1 {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+p {
+    font-size: 0.75em;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* header */
+.text-header {
+    background-color: #cce8cf;
+    text-align: center;
+    height: 100%;
+}
+
+.text-header h1 {
+    font-family: 'Allura', cursive;
+    font-size: 4em;
+}
+
+/* navbar */
+.bg-light {
+    background-color: #ddefe3 !important;
+}
+
+.button-nav{
+    border-radius: 5px;
+    padding-left: 5px;
+    transition: background-color 150ms;
+}
+
+.button-nav:hover {
+    background-color: #cce8cf !important;
+}
+
+/* main content area/cards */
+
+.card-group {
+    background-color: #e6e1dd;
+    padding: 20px;
+}
+
+.card {
+    background-color: #e5d8c8;
+}
+
+/* sidebar and signup */
+#sidebar {
+    padding: 20px;
+    text-align: center;
+    justify-content: center;
+}
+
+#signup-header {
+    margin-top: 10px;
+}
+
+#signup {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+label {
+    width: 100%;
+    text-align: left;
+    padding: 5px;
+}
+
+input {
+    margin: 5px;
+    margin-left: 0px;
+}
+
+.submit-button {
+    margin: 20px;
+    align-self: center;
+    font-weight: bold;
+    background-color: #9e74d0;
+    color: white;
+    transition: color 200ms, background-color 200ms, border 200ms;
+}
+
+.submit-button:hover {
+    background-color: white;
+    color: #9e74d0;
+    border: 1px solid #9e74d0;
+}
+
+/* footer */
+#footer {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #bebab1;
+    width: 100%;
+}
+
+.footer-col {
+    display: flex;
+    flex-direction: column;
+}
+
+#footer p {
+    font-size: 0.9em;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.contact-link {
+    color: black;
+    text-decoration: underline;
+    transition: color 150ms;
+}
+
+.contact-link:hover {
+    color: white;
+}
+
+#footer p a i {
+    margin-right: 10px;
+}
